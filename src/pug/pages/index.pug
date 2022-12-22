@@ -2,41 +2,28 @@ extends ../layout/base
 
 block content
 
-	section.main-img
-		.container
-			.title-text 
-				p.title-text__title ВЫЗОВ
-				p.title-text__title-sm военно-патриотический лагерь
-			.box
-				.box__left
-					p.box__title Ближайщий <br> старт
-					p.box__text-bg 23.10.2000
+	section.section-one
+		include ../includes/modules/section-one
 
-				.box__center
+	section
+		include ../includes/modules/section-two	
+	//- section.program#program
+	//- 	.container
+	//- 		include ../includes/modules/program
 
-				.box__right
-					p.box__title Участвовало
-					p.box__text-bg 130
-					p.box__text бойцов
-			
-	section.program#program
-		.container
-			+section-title('В программе лагеря')
-			include ../includes/modules/program
+	//- section.review#review
+	//- 	.container
+	//- 		+section-title('Отзывы участников')
+	//- 		include ../includes/modules/review
 
-	section.review#review
-		.container
-			+section-title('Отзывы участников')
-			include ../includes/modules/review
+	//- section.gallery#gallery
+	//- 	.container
+	//- 		+section-title('Галерея')
+	//- 		include ../includes/modules/gallery
 
-	section.gallery#gallery
-		.container
-			+section-title('Галерея')
-			include ../includes/modules/gallery
-
-	section.form#form
-		.container
-			+section-title("Заявка на участие")
+	//- section.form#form
+	//- 	.container
+	//- 		+section-title("Заявка на участие")
 			
 
 

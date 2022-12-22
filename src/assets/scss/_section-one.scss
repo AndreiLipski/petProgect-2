@@ -1,0 +1,36 @@
+.section-one{
+    background-color: #3170FF;
+}
+
+.section-one-cont{
+    margin: 0 auto;
+	background-image: url('/assets/img/image-1.jpg');
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-size: 1920px 860px;
+	&__background{
+        width: 100%;
+		background: linear-gradient(271.04deg, rgba(49, 112, 255, 0) 0.04%, #3170FF 99.24%);
+        height: 860px;
+	}
+
+}
+
+.section-one{
+    &__box{
+       padding: 170px 0 80px 0; 
+    }
+    
+    &__box-title{
+        font-size: 5.625rem;
+        font-family: $f-main;
+        font-weight: 700;
+        color: #fff;
+    }
+    &__box-text{
+        font-size: 1.25rem;
+        font-family: $f-3;
+        font-weight: 300;
+        color: #fff;
+    }
+}

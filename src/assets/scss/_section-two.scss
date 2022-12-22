@@ -1,0 +1,32 @@
+.wrapper{
+    &__box-img{
+
+    }
+    &__img{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.box-text{
+    &__text-title{
+        font-family: $f-main;
+        font-weight: 700;
+        font-size: 2.75rem;
+    }
+    &__text-sm{
+        font-family: $f-3;
+        font-weight: 400;
+        font-size: 1.125rem;
+    }
+}
+
+.wrapper-box{
+    &__icons{
+
+    }
+    &__ic{
+        width: 30px;
+        height: 100%;
+    }
+}
