@@ -23,14 +23,16 @@
     
     &__box-title{
         font-size: 5.625rem;
-        font-family: $f-main;
+        font-family: $f-Ubuntu;
         font-weight: 700;
+        line-height: 105px;
         color: #fff;
     }
     &__box-text{
         font-size: 1.25rem;
-        font-family: $f-3;
-        font-weight: 300;
+        font-family: $f-Poppins;
+        font-weight: 400;
+        line-height: 30px;
         color: #fff;
     }
 }

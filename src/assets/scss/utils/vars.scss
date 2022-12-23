@@ -21,10 +21,14 @@ $grid-gutter-width: 20px;
 $grid-columns: 10;
 // Fonts
 //$f-size: 16px;//base -> 1rem
-$f-size: 16px;
+
 $f-main: 'Ubuntu';
 $f-sec: 'Poppins';
 $f-3: 'Inter';
+
+$f-Ubuntu: 'Ubuntu';
+$f-Poppins: 'Poppins';
+$f-Inter: 'Inter';
 
 // Colors
 $bg-main: #fff;
@@ -33,25 +37,10 @@ $c-hr: #ccc;
 $bg-inc-mark: #ff9;
 $c-sec: #d15645;
 //цвета текста
-$c-text: #2B2A29;
-$c-text2: #AAAAAA;
+$c-text: #333333;
+$c-text2: #666666;
 $c-link: #2B2A29;
-$c-gray: #F6F6F6; //цвет с вески
-$c-gray-second: #E4E4E4; //цвет с вески
+$c-gray: #999999 //цвет с вески
+
 //основные цвета макета
-$c-header: #5d5c5c;
-$c-footer: #302f2f;
-$c-primary-white: #F6F6F6;
-$c-primary: #F5365C;
-$c-primary-2: #FE7235;
-$c-primary-hover: #BB282F;
-$c-error: #EB5757;
-$c-trp: transparent;
-$blue: #5E72E4;
-$dark-blue: #055795;
-$red: #E41522;
-$green: #65B360;
-$yellow: #ff7033;
-$white: #fff;
-$black: #000;
-$gray: #636363;
+
