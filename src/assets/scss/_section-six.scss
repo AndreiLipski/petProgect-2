@@ -1,0 +1,70 @@
+.section-six{
+    padding: 7.5rem;
+}
+
+
+
+.wrapper-slider{
+position: relative;
+
+}
+.container-1 {
+
+    position: relative;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    width: 200%;
+    transition: all .25s ease-in;
+    transform: translateX(0);
+
+    .box {
+        height: 100%;
+        width: 100%;
+        align-items: center;
+        position: relative;
+    }
+}
+.slide-title {
+    position: absolute;
+    top: 50px;
+    left: 280px;
+    z-index: 20;
+}
+.slide-text {
+    position: absolute;
+}
+
+.prev,
+.next,
+.trail {
+    z-index: 10000;
+    position: absolute;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    opacity: .5;
+    transition: all .3s ease;
+    &:hover { opacity: 1;}
+}
+.prev {
+    top: 90%;
+    left: 2%;
+    transform: translateY(-50%);
+}
+
+.next {
+    top: 90%;
+    right: 2%;
+    transform: translateY(-50%);
+}
+
+.active {
+    opacity: 1 !important;
+}

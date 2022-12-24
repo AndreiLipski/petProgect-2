@@ -1,0 +1,203 @@
+.section-four{
+    padding: 120px 0;
+}
+.card-sec-four {
+    position: relative;
+    background: #FFFFFF;
+    border: 1px solid #E5E5E5;
+    border-radius: 5px;
+    margin: 25px 0;
+    &__box-img {
+        margin-bottom: 1.9rem;
+        position: relative;
+    }
+    &__stic {
+        position: absolute;
+        top: 30px;
+        right: 0;
+        background: #2A79EE;
+        border-radius: 5px 0px 0px 5px;
+        padding: 10px 20px;
+
+        font-family: $f-Poppins;
+        font-weight: 400;
+        font-size: 1rem;
+        color: #FFFFFF;
+    }
+    &__stic-2{
+        width: 68%;
+        position: absolute;
+        bottom: 0;
+        margin: 0 16%;
+        background: rgba(250, 91, 62, 0.6);
+        border-radius: 5px 5px 0px 0px;
+        padding: 10px 20px;
+
+        font-family: $f-Poppins;
+        font-weight: 500;
+        font-size: 1rem;
+        color: #FFFFFF;
+    }
+    &__img{
+        width: 94%;
+    }
+    &__box-text {
+        display: inline-block;
+        padding-left: 0.9rem;
+    }
+    &__title{
+        font-family: $f-Ubuntu;
+        font-weight: 500;
+        font-size: 1.25rem;
+        letter-spacing: 0.01em;
+        color: $c-text;
+
+        margin-bottom: 6px;
+    } 
+    &__place-img {
+        display: flex;
+        align-items: center;
+
+        margin-bottom: 1.2rem;
+    }
+    &__place-text {
+        font-family: $f-Poppins;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+        color: $c-gray;
+
+        padding-left: 8px;
+    }
+    &__price {
+        font-family: $f-Ubuntu;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2rem;
+        line-height: 37px;
+        color: #1266E3;
+
+        margin-bottom: 1.375rem;
+    }
+    &__box-icons{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        margin-bottom: 1.5rem;
+    } 
+    &__icon {
+        display: flex;
+        align-items: center;
+
+        font-family: $f-Poppins;
+        font-weight: 400;
+        font-size: 0.85rem;
+        line-height: 21px;
+        letter-spacing: 0.02em;
+        color: $c-gray;
+    }
+    &__icon-box{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background: #E5E5E5;
+    }
+    &__icon p {
+        padding-left: 8px;
+    }
+    &__icon{
+
+    }
+    &__stic-hover {
+        position: absolute;
+    }
+}
+
+.card-sec-four:hover {
+        box-shadow: 3px 7px 50px rgba(4, 21, 47, 0.15);
+        transition: 0.6s;
+    }
+.card-sec-four:hover .hover-icons{
+    fill-opacity: 0.8;
+    transition: 0.6s;
+}
+
+.stic-hover{
+
+    display: flex;
+    &__one{
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__two{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+    
+.hover-icons {
+    fill-opacity: 0;
+}
+
+.hover-icons-pos1{
+    position: absolute;
+    top: 24px;
+    left: 10px;
+
+}
+
+.hover-icons-pos2{
+    position: absolute;
+    top: 37px;
+    left: 25px;
+}
+
+.hover-icons-pos3{
+    position: absolute;
+    top: 38px;
+    left: 78px;
+    z-index: 2;
+}
+
+.hover-icons-pos4{
+    position: absolute;
+    top: 24px;
+    left: 66px;
+}
+.btn-sec{
+    display: flex;
+    justify-content: center;
+}
+
+.btn-sec-4 {
+    width: 360px;
+    height: 60px;
+    margin-top: 3rem;
+
+
+    background: #FFFFFF;
+    border: 1px solid #2A79EE;
+    border-radius: 10px;
+
+    font-family: $f-Poppins;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #1266E3;
+
+}
+.btn-sec-4:hover{
+    background: #1266E3;
+    color: #fff;
+    transition: 0.6s;
+
+}

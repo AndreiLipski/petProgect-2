@@ -8,6 +8,8 @@ import './js/burger.js';
 import './js/scrol.js';
 import './js/program.js';
 import './js/gallery-collapse.js';
+import './js/slider.js';
+
 //
 // if (process.env.NODE_ENV !== `production`) {
 //   async function load() {
