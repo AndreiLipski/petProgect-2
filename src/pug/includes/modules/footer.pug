@@ -1,10 +1,71 @@
 footer.footer
-	.container
-		.footer-wrapper
-			.footer-left
-				img.logo(src="../../assets/img/logo-g.svg", alt="")
-			.footer-mid
+	.container.footer-cont
+		.contact
+			p.footer-title Contact
+			ul.contact__list.text-contact
+				li.contact__li 
+					img(src="../../../assets/img/footer/img-footer-1.png", alt="") 
+					p bpd.help@gmail.com
+				li.contact__li 
+					img(src="../../../assets/img/footer/img-footer-2.png", alt="") 
+					p +17029625000
+				li.contact__li 
+					img(src="../../../assets/img/footer/img-footer-3.png", alt="") 
+					p 3100 N Tenaya Way, Las Vegas,<br> NV 89128, United States
 
-			.footer-right#contact
-				p.footer-right__phone
-					a(href="tel:+375291171100") +375 (29) 117-11-00
+			.contact-span
+
+			.box-social 
+				a(href="https://www.instagram.com" target="_blank")
+					<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M13.8445 3.06006C13.2945 3.06006 12.8445 3.51006 12.8445 4.06006C12.8445 4.62006 13.2945 5.07006 13.8445 5.07006C14.4045 5.07006 14.8545 4.62006 14.8545 4.06006C14.8445 3.51006 14.3945 3.06006 13.8445 3.06006Z" fill="#E7FAFF"/>
+					<path d="M9.3743 4.3501C7.0443 4.3501 5.1543 6.2401 5.1543 8.5701C5.1543 10.9001 7.0443 12.7901 9.3743 12.7901C11.7043 12.7901 13.5943 10.9001 13.5943 8.5701C13.5943 6.2401 11.7043 4.3501 9.3743 4.3501ZM9.3743 11.2801C7.8843 11.2801 6.6743 10.0701 6.6743 8.5801C6.6743 7.0901 7.8843 5.8801 9.3743 5.8801C10.8643 5.8801 12.0743 7.0901 12.0743 8.5801C12.0743 10.0701 10.8643 11.2801 9.3743 11.2801Z" fill="#E7FAFF"/>
+					<path d="M12.7244 17.14H5.88437C3.04437 17.14 0.734375 14.83 0.734375 11.99V5.15C0.734375 2.31 3.04437 0 5.88437 0H12.7244C15.5644 0 17.8744 2.31 17.8744 5.15V11.99C17.8744 14.83 15.5644 17.14 12.7244 17.14ZM5.88437 1.61C3.93437 1.61 2.34438 3.2 2.34438 5.15V11.99C2.34438 13.94 3.93437 15.53 5.88437 15.53H12.7244C14.6744 15.53 16.2644 13.94 16.2644 11.99V5.15C16.2644 3.2 14.6744 1.61 12.7244 1.61H5.88437Z" fill="#E7FAFF"/>
+					</svg>
+
+				a(href="https://www.facebook.com/" target="_blank") 
+					<svg width="14" height="24" viewBox="0 0 14 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M12.5645 13.14L13.2145 8.91H9.15451V6.17C9.15451 5.01 9.72451 3.89 11.5345 3.89H13.3745V0.29C13.3745 0.29 11.7045 0 10.1045 0C6.76451 0 4.58451 2.02 4.58451 5.69V8.91H0.874512V13.14H4.58451V23.05H9.15451V13.14H12.5645Z" fill="#E7FAFF"/>
+					</svg>
+
+				a(href="https://www.youtube.com" target="_blank") 
+					<svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M16.3745 3.51C16.3745 1.57 14.8045 0 12.8645 0H3.88451C1.94451 0 0.374512 1.57 0.374512 3.51V7.69C0.374512 9.63 1.94451 11.2 3.88451 11.2H12.8645C14.8045 11.2 16.3745 9.63 16.3745 7.69V3.51ZM11.0945 5.91L7.06451 7.9C6.90451 7.99 6.37451 7.87 6.37451 7.69V3.6C6.37451 3.42 6.91451 3.3 7.07451 3.39L10.9245 5.49C11.0845 5.59 11.2545 5.82 11.0945 5.91Z" fill="#E7FAFF"/>
+					</svg>
+
+				a(href="https://www.pinterest.com" target="_blank") 
+					<svg width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M5.75647 11.5617C5.74647 11.6117 5.72648 11.6517 5.71648 11.7017C5.06648 14.2517 4.99647 14.8217 4.32647 16.0117C4.00647 16.5717 3.64648 17.1117 3.24648 17.6217C3.19648 17.6817 3.15648 17.7517 3.06648 17.7317C2.96648 17.7117 2.95647 17.6217 2.94647 17.5417C2.83647 16.7617 2.77647 15.9917 2.80647 15.2017C2.83647 14.1817 2.96648 13.8317 4.28648 8.30168C4.30648 8.22168 4.28647 8.15168 4.25647 8.07168C3.94647 7.22168 3.87647 6.36168 4.15647 5.48168C4.75647 3.59168 6.88647 3.45168 7.26647 5.01168C7.49647 5.97168 6.88648 7.23168 6.41648 9.10168C6.02648 10.6417 7.83648 11.7317 9.38648 10.6117C10.8165 9.58168 11.3665 7.10168 11.2565 5.34168C11.0465 1.84168 7.20647 1.08168 4.76647 2.21168C1.97647 3.50168 1.33648 6.97168 2.59648 8.55168C2.75648 8.75168 2.87647 8.87168 2.82647 9.08168C2.74647 9.40168 2.67647 9.72168 2.58647 10.0317C2.51647 10.2617 2.32647 10.3517 2.08647 10.2517C1.61647 10.0617 1.23648 9.77168 0.916475 9.38168C-0.153525 8.05168 -0.463524 5.43168 0.956476 3.21168C2.52648 0.751683 5.44648 -0.24832 8.10648 0.0516797C11.2865 0.41168 13.3065 2.59168 13.6765 5.05168C13.8465 6.17168 13.7265 8.95168 12.1465 10.9117C10.3265 13.1617 7.38648 13.3117 6.02648 11.9317C5.94648 11.8217 5.85647 11.6917 5.75647 11.5617Z" fill="#E7FAFF"/>
+					</svg>
+
+
+		.discover
+			p.footer-title Discover
+			ul.discover__list.footer-other.border-footer
+				li.discover__li New york
+				li.discover__li Paris
+				li.discover__li London
+				li.discover__li Dubai
+				li.discover__li Canada
+
+		.category
+			p.footer-title Lists by Category
+			ul.category__list.footer-other.border-footer
+				li.category__li Appartment
+				li.category__li House
+				li.category__li Office
+				li.category__li Shop
+				li.category__li Village
+
+
+		.quick
+			p.footer-title Lists by Category
+			ul.quick__list.footer-other
+				li.quick__li New Articles
+				li.quick__li about us
+				li.quick__li terms & Condition
+				li.quick__li user’s guide
+				li.quick__li support center
+				li.quick__li Contact us
+
+	.footer-down © 2022. Powered By BPD

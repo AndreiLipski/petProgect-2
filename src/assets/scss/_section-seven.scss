@@ -1,0 +1,24 @@
+.section-seven {
+    padding: 6.25rem;
+    background: #F5FAFE;
+
+}
+
+.card-sec-7{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__num{
+        padding: 1.8rem 0 10px 0;
+
+        font-family: $f-Ubuntu;
+        font-weight: 400;
+        font-size: 2.25rem;
+        column-gap: #191919;
+    }
+    &__text{
+        font-family: $f-Ubuntu;
+        font-weight: 300;
+        font-size: 1rem;
+    }
+}

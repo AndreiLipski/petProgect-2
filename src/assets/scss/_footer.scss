@@ -1,1 +1,87 @@
-@import 'utils/vars';
+.footer{
+    background: #0D263C;
+
+}
+
+.footer-cont{
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    padding: 2.5rem 0 0 0;
+    li {
+        margin-bottom: 1.8rem;
+    }
+    li:hover{
+        text-decoration: underline;
+    }
+}
+
+.footer-title{
+    font-family: $f-Ubuntu;
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+}
+
+.text-contact{
+    font-family: $f-Inter;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+}
+.contact-span{
+        width: 80%;
+        height: 2px;
+        background: #fff;
+        opacity: 0.3;
+        margin-bottom: 1rem;
+}
+
+.contact__li {
+    display: flex;
+    p {
+        padding-left: 20px;
+    }
+}
+.box-social {
+    svg {
+        width: 30px;
+        height: 30px;
+    }
+    a {
+        margin-right: 30px;
+    }
+    a:last-child{
+        margin-right: 0;
+    }
+    a:hover{
+        path{
+            fill: #497298;
+        }
+    }
+}
+
+.border-footer{
+    border-right: 2px solid #425879;
+}
+.footer-other{
+    font-family: $f-Poppins;
+    font-weight: 500;
+    font-size: 1rem;
+
+}
+
+
+.footer-down {
+    padding: 20px 0;
+    text-align: center;
+    background: #03182C;
+
+    font-family: $f-Inter;
+    font-weight: 500;
+    font-size: 0.85rem;
+    line-height: 15px;
+    letter-spacing: 0.03em;
+    color: #fff;
+}
