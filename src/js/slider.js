@@ -119,27 +119,32 @@ Sim.initialize = function(that) {
 new Sim();
 
 
-function Simq(slid) {
+"use strict"
 
-	let id = document.getElementById(slid);
-		this.sldrRoot = id;
-        console.log(id);
+function sim(sli) {
 
+	let id = document.getElementById(sli);
+	if(id) {
+		this.sldrRoot = id
+	}
+	else {
+		this.sldrRoot = document.querySelector('.sim-sliders')
+	};
 
 	// Carousel objects
-	this.sldrList = this.sldrRoot.querySelector('.sim-slider-listq');
-	this.sldrElements = this.sldrList.querySelectorAll('.sim-slider-elementq');
-	this.sldrElemFirst = this.sldrList.querySelector('sim-slider-elementq');
-	this.leftArrow = this.sldrRoot.querySelector('div.sim-slider-arrow-leftq');
-	this.rightArrow = this.sldrRoot.querySelector('div.sim-slider-arrow-rightq');
+	this.sldrList = this.sldrRoot.querySelector('.sim-slider-lists');
+	this.sldrElements = this.sldrList.querySelectorAll('.sim-slider-elements');
+	this.sldrElemFirst = this.sldrList.querySelector('.sim-slider-elements');
+	this.leftArrow = this.sldrRoot.querySelector('div.sim-slider-arrow-lefts');
+	this.rightArrow = this.sldrRoot.querySelector('div.sim-slider-arrow-rights');
 
 
 	// Initialization
 	this.options = Sim.defaults;
-	Sim.initialize(this)
+	sim.initialize(this)
 };
 
-Sim.defaults = {
+sim.defaults = {
 
 	// Default options for the carousel
 	loop: true,     // Бесконечное зацикливание слайдера
@@ -148,7 +153,7 @@ Sim.defaults = {
 
 };
 
-Sim.prototype.elemPrev = function elemPrev(num) {
+sim.prototype.elemPrev = function(num) {
 	num = num || 1;
 
 	let prevElement = this.currentElement;
@@ -166,7 +171,7 @@ Sim.prototype.elemPrev = function elemPrev(num) {
 	this.sldrElements[prevElement].style.opacity = '0';
 };
 
-Sim.prototype.elemNext = function elemNext(num) {
+sim.prototype.elemNext = function(num) {
 	num = num || 1;
 	
 	let prevElement = this.currentElement;
@@ -186,7 +191,7 @@ Sim.prototype.elemNext = function elemNext(num) {
 };
 
 
-Sim.initialize = function(that) {
+sim.initialize = function(that) {
 
 	// Constants
 	that.elemCount = that.sldrElements.length; // Количество элементов
@@ -215,15 +220,13 @@ Sim.initialize = function(that) {
 		that.leftArrow.addEventListener('click', function() {
 			let fnTime = getTime();
 			if(fnTime - bgTime > 1000) {
-				bgTime = fnTime;
-                elemPrev();
+				bgTime = fnTime; that.elemPrev()
 			}
 		}, false);
 		that.rightArrow.addEventListener('click', function() {
 			let fnTime = getTime();
 			if(fnTime - bgTime > 1000) {
-				bgTime = fnTime; 
-                elemNext()
+				bgTime = fnTime; that.elemNext()
 			}
 		}, false)
 	}
@@ -234,8 +237,6 @@ Sim.initialize = function(that) {
 
 };
 
-new Simq();
-
-
+new sim();
 
 
