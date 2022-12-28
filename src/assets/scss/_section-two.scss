@@ -1,9 +1,12 @@
 .section-two{
-    padding: 120px 0;
+    padding: 4.5rem 0;
 }
 .wrapper{
-    &__box-img{
 
+    &__box-img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     &__img{
         width: 100%;
@@ -18,21 +21,24 @@
         font-family: $f-Ubuntu;
         font-weight: 700;
         font-size: 2.75rem;
-        line-height: 59px;
+        line-height: 3.75rempx;
         color: #333333;
+        @media (max-width: 992px) {
+            margin-top: 1rem;
+        }
     }
     &__text-sm{
         font-family: $f-Inter;
         font-weight: 500;
         font-size: 1.125rem;
         color: #666666;
-        line-height: 34px;
-        margin-bottom: 52px;
+        line-height: 2rem;
+        margin-bottom: 3.25rem;
     }
 }
 
 .wrapper-box{
-    margin-bottom: 45px;
+    margin-bottom: 2.8px;
     display: flex;
     align-items: center;
     &:last-child{
@@ -44,6 +50,10 @@
     &__ic{
         width: 116px;
         height: 116px;
+        @media (max-width: 992px) {
+            width: 100px;
+            height: 100px;
+        }
     }
     &__box-text_title {
         margin-bottom: 10px;
@@ -56,9 +66,9 @@
     &__box-text_sm{
         font-family: $f-Poppins;
         font-weight: 500;
-        line-height: 34px;
+        line-height: 2.2rem;
         font-size: 1.125rem;
-        line-height: 27px;
+
         color: #666666;
     }
 }

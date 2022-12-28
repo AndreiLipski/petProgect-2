@@ -1,17 +1,21 @@
 .section-three{
     background: #F8F9FB;
-    padding: 7.5rem 0;
+    padding: 4.5rem 0;
 }
 
 .wrapper-title-3{
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 .card-box{
-    width: 265px;
+    width: 100%;
     height: 307px;
     background: #FFFFFF;
     border-radius: 15px;
+    @media (max-width: 1199px) {
+        margin-bottom: 2rem;
+        height: 200px;
+    }
     &__up {
         height: 50%;
         display: flex;
@@ -43,7 +47,11 @@
 
 .up-fon{
     position: absolute;
-        
+    @media (max-width: 1199px) {
+        width: 70px;
+        height: 70px;
+    
+    }
     }
 
 .up-icon{

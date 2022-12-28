@@ -11,13 +11,13 @@
     justify-content: center;
     background: #1266E3;
     border-radius: 30px;
-    padding: 2.5rem;
+    padding: 2rem;
     &__title{
-        margin-bottom: 20px;
+        margin-bottom: 1.8rem;
         font-family: $f-Ubuntu;
         font-weight: 700;
         font-size: 2.75rem;
-        line-height: 51px;
+        line-height: 3rem;
         letter-spacing: 0.01em;
         text-align: center;
         color: #FFFFFF;
@@ -26,10 +26,11 @@
         font-family: $f-Poppins;
         font-weight: 400;
         font-size: 1rem;
-        line-height: 24px;
+        line-height: 1.85rem;
         letter-spacing: 0.02em;
         text-align: center;
         color: #FFFFFF;
+        margin-bottom: 10px;
     }
 }
 .box-9-11{
@@ -41,16 +42,16 @@
     flex-direction: column;
     align-items: center;
 
-    width: 260px;
+    width: 100%;
     background: #FFFFFF;
     border-radius: 15px;
     padding: 2rem;
     &__text{
-        margin-bottom: 30px;
+        margin-bottom: 1.8rem;
         font-family: $f-Poppins;
         font-weight: 600;
         font-size: 1rem;
-        line-height: 24px;
+        line-height: 1.8rem;
         text-align: center;
 
     }
@@ -66,7 +67,7 @@
         font-family: $f-Poppins;
         font-weight: 500;
         font-size: 1rem;
-        line-height: 24px;
+        line-height: 1.8rem;
         color: #FFFFFF;
     }
     button:hover{
@@ -80,5 +81,17 @@
     display: flex;
     justify-content: space-between;
 
-    padding: 6.25rem 0;
+    padding: 4rem 0;
+
+
+}
+
+.ant-9{
+    margin-bottom: 4.5rem;
+
+}
+
+.center{
+    display: flex;
+    justify-content: center;
 }

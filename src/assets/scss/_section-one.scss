@@ -18,21 +18,21 @@
 
 .section-one{
     &__box{
-       padding: 170px 0 80px 0; 
+       padding: 10rem 0 4rem 0; 
     }
     
     &__box-title{
         font-size: 5.625rem;
         font-family: $f-Ubuntu;
         font-weight: 700;
-        line-height: 105px;
+        line-height: 6rem;
         color: #fff;
     }
     &__box-text{
         font-size: 1.25rem;
         font-family: $f-Poppins;
         font-weight: 400;
-        line-height: 30px;
+        line-height: 2.85rem;
         color: #fff;
     }
 }

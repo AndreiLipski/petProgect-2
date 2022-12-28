@@ -12,6 +12,7 @@
 @import "components/_burger.scss";
 @import "components/_form.scss";
 @import "components/_tab.scss";
+@import "components/_ant-carusel-9.scss";
 
 @import "_bootstrap-grid.scss";
 
@@ -31,8 +32,21 @@
 html{
 	font-size: 16px;
 }
-
-
+@media (max-width: 1100px) {
+	html{
+		font-size: 14px;
+	}
+}
+@media (max-width: 800px) {
+	html{
+		font-size: 12px;
+	}
+}
+@media (max-width: 670px) {
+	html{
+		font-size: 11px;
+	}
+}
 .wrapper-title{
 	text-align: center;
 	&__title{
@@ -46,6 +60,7 @@ html{
 		color: $c-text;
 	}
 	&__text{
+
 		font-family: $f-Inter;
 		font-weight: 400;
 		font-size: 1.125rem;

@@ -1,22 +1,39 @@
 .section-six{
-		padding: 6.5rem;
+		padding: 4.5rem;
 }
-
-
 
 .slider-6{
-		height: 600px;
-}
+	height: 100%;
+	width: 100%;
+	@media (max-width: 768px) {
+		height: 800px;
 
+	}
+	@media (max-width: 600px) {
+		height: 600px;
+
+	}
+	@media (max-width: 400px) {
+		height: 440px;
+
+	}
+}
+.slider-6_none{
+	@media (max-width: 768px) {
+		display: none;
+
+	}
+
+}
 .sim-slider {
-		position: relative;
-		background-color: white;
+	position: relative;
+	background-color: white;
 }
 
 /* General styles */
 .sim-slider {
-		position: relative;
-		height: 100%;
+	position: relative;
+	height: 100%;
 }
 
 .sim-sliders {
@@ -25,62 +42,62 @@
 }
 
 .sim-slider-list {
-		list-style-type: none;
-		position: relative;
-		height: 100%;
+	list-style-type: none;
+	position: relative;
+	height: 100%;
 }
 
 .sim-slider-element {
+	width: 100%;
+	height: 100%;
+	transition: opacity 1s ease-in;
+	opacity: 0;
+	position: absolute;
+	z-index: 2;
+	left: 0;
+	top: 0;
+	display: block;
+	img{
 		width: 100%;
 		height: 100%;
-		transition: opacity 1s ease-in;
-		opacity: 0;
-		position: absolute;
-		z-index: 2;
-		left: 0;
-		top: 0;
-		display: block;
-		img{
-				width: 100%;
-				height: 100%;
-		}
+	}
 }
 
 /* Navigation item styles */
 div.sim-slider-arrow-left,
 div.sim-slider-arrow-right {
-		width: 22px;
-		position: absolute;
-		cursor: pointer;
-		opacity: 0.4;
-		z-index: 4;
-		svg {
-				width: 40px;
-				height: 40px;
-				fill: #ffff;
-		}
+	width: 22px;
+	position: absolute;
+	cursor: pointer;
+	opacity: 0.4;
+	z-index: 4;
+	svg {
+		width: 40px;
+		height: 40px;
+		fill: #ffff;
+	}
 }
 
 div.sim-slider-arrow-left {
-		left: 40px;
-		bottom: 40px;
-		display: block;
+	left: 40px;
+	bottom: 40px;
+	display: block;
 
 }
 
 div.sim-slider-arrow-right {
-		right: 40px;
-		bottom: 40px;
-		display: block;
+	right: 40px;
+	bottom: 40px;
+	display: block;
 
 }
 
 div.sim-slider-arrow-left:hover {
-		opacity: 1.0;
+	opacity: 1.0;
 }
 
 div.sim-slider-arrow-right:hover {
-		opacity: 1.0;
+	opacity: 1.0;
 }
 
 .stick{
@@ -127,7 +144,10 @@ div.sim-slider-arrow-right:hover {
 .referense-6 {
 	display: flex;
 	flex-direction: column;
-	padding-top: 90px;
+	padding-top: 5.5rem;
+	@media (max-width: 1100px) {
+		padding: 0;
+	}
 	&__lg{
 		font-family: $f-Ubuntu;
 		font-weight: 500;
@@ -136,7 +156,6 @@ div.sim-slider-arrow-right:hover {
 		color: #072A5F;
 
 		margin-bottom: 1rem;
-
 
 	}
 	&__sm{
@@ -149,7 +168,7 @@ div.sim-slider-arrow-right:hover {
 	}
 	span{
 		height: 2px;
-		width: 300px;
+		width: 70%;
 		background: #1266E3;
 
 	}
@@ -157,10 +176,20 @@ div.sim-slider-arrow-right:hover {
 }
 
 .referense-6-right{
-	padding-left: 65px;
+	padding-left: 4rem;
+	@media (max-width: 1100px) {
+		padding: 0;
+	}
+	@media (max-width: 768px) {
+		display: none;
+	}
 }
 .referense-6-left{
-	padding-right: 65px;
+	padding-right: 4rem;
+	@media (max-width: 1100px) {
+		padding: 0;
+	}
+
 }
 // второй слайдер
 .sim-sliders {

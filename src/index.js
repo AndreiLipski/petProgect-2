@@ -9,6 +9,6 @@ import './js/scrol.js';
 import './js/program.js';
 import './js/gallery-collapse.js';
 import './js/slider.js';
-
+import './js/ant-carusel-9.js';
 
 

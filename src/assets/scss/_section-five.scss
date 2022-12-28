@@ -2,7 +2,11 @@
     background-image: url('/assets/img/img-5-1.jpg');
     background-position: 50% 0;
     background-repeat: no-repeat;
-    background-size: 1920px ;
+    background-size: 1920px;
+
+    @media (max-width: 767px) {
+        background-size: 2200px;
+    }
 }
 .sec-5-wrapper{
     display: flex;
@@ -10,7 +14,7 @@
     height: 100%;
 }
 .sec-5-wrap {
-    margin: 8rem 0;
+    // margin: 4rem 0;
 
 }
 
@@ -18,9 +22,12 @@
     font-family: $f-Ubuntu;
     font-weight: 700;
     font-size: 2.75rem;
-    line-height: 51px;
+    line-height: 3rem;
     letter-spacing: 0.01em;
     color: #FFFFFF;
+    @media (max-width: 768px) {
+        margin-top: 20px;
+    }
 }
 
 .sec-5-line{
@@ -61,7 +68,7 @@
         font-family: $f-Poppins;
         font-weight: 400;
         font-size: 1rem;
-        line-height: 24px;
+        line-height: 1.8rem;
         letter-spacing: 0.02em;
         text-transform: capitalize;
 
@@ -72,7 +79,7 @@ color: #D0E1FB;
 .form-sec-5{
     background: #FFFFFF;
     border-radius: 20px;
-    margin: 8rem 0;
+    margin: 4rem 0;
     padding: 36px 28px;
 }
 .sec-5-form-title{
