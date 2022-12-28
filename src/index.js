@@ -3,7 +3,7 @@ import "./assets/css/main.css";
 import "./assets/scss/main.scss";
 
 
-// import './js/burger.js';
+import './js/burger.js';
 // import './js/swiper.js';
 import './js/scrol.js';
 import './js/program.js';

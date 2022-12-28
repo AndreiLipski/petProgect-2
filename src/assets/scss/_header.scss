@@ -14,12 +14,14 @@
 	justify-content: space-between;
 	align-items: center;
 	height: 84px;
-
+	
 	&__logo{
 		
 	}
 	&__nav-menu{
-
+		@media (max-width: 992px) {
+			display: none;
+		}
 	}
 }
 
@@ -43,6 +45,10 @@
 	line-height: 21px;
 	font-size: 1.15rem;
 	letter-spacing: 0.04em;
+	&:hover{
+		color: #2a5174;
+		transition: 0.4s;
+	}
 }
 
 .nav-menu-btn{
@@ -54,6 +60,12 @@
 	font-weight: 500;
 	font-size: 1rem;
 	transition: all 1s;
+	@media (max-width: 992px) {
+		width: auto;
+		height: auto;
+		padding: 10px;
+		margin: 20px 0;
+	}
 }
 
 .nav-menu-btn:hover{

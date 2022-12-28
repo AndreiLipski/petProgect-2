@@ -14,6 +14,9 @@
     li:hover{
         text-decoration: underline;
     }
+    @media (max-width: 992px) {
+        display: none;
+    }
 }
 
 .footer-title{
@@ -21,6 +24,7 @@
     font-weight: 700;
     font-size: 1.5rem;
     padding-bottom: 2rem;
+    letter-spacing: 0.03em;
 }
 
 .text-contact{

@@ -1,0 +1,83 @@
+.acor-container {
+    
+}
+
+.footer-box-acord{
+    display: flex;
+    margin-bottom: 10px;
+    &:last-child{
+        margin-bottom: 0;
+    }
+    p{
+        padding-left: 10px;
+    }
+}
+.box-social{
+    margin-top: 20px;
+}
+.acor-container .acor-body {
+
+    height: 0;
+    color: #FFF;
+
+    line-height: 18px;
+    // padding: 0 30px;
+    box-sizing: border-box;
+    transition: color 0.5s, padding 0.5s;
+    overflow: hidden;
+    font-family: Verdana, sans-serif; 
+    font-size: 16px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2), 0 10px 16px rgba(0,0,0,0.2);
+}
+.acor-container .acor-body p {
+
+}
+.acor-container label {
+    cursor: pointer;
+
+    display: block;
+    padding: 15px 20px;
+    width: 100%;
+    color: #ffffff;
+    font-weight: 300;
+    box-sizing: border-box;
+    z-index: 100;
+
+    font-family: $f-Ubuntu;
+    font-weight: 700;
+    font-size: 1.5rem;
+    letter-spacing: 0.06em;
+    padding-bottom: 2rem;
+
+    transition: color .35s;
+}
+.acor-container label:hover {
+    color: #FFF;
+
+}
+.acor-container input{
+    display: none;
+}
+.acor-container label:before {
+    content: '\276F';
+    float: right;
+}
+.acor-container input:checked + label {
+    font-family: $f-Ubuntu;
+    font-weight: 700;
+    font-size: 1.5rem;
+    letter-spacing: 0.06em;
+    padding-bottom: 2rem;
+    color: #FFF;
+    border-bottom: 2px solid #03182C;;
+}
+.acor-container input:checked + label:before {
+    transition: transform .35s;
+    transform: rotate(90deg);
+}
+.acor-container input:checked + label + .acor-body {
+    height: auto;
+    margin-top: -5px;
+    color: rgb(255, 255, 255);
+    padding: 20px 30px 10px;
+}
